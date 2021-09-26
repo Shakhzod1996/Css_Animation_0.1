@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrap {
+    display: block;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+.sphere {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    background-color: #3cf;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1 {
+    animation-delay: 0;
+}
+
+.s2 {
+    background-color: #47dc80;
+    animation-delay: .5s;
+}
+
+.s3 {
+    background-color: #f4e338;
+    animation-delay: 1s;
+}
+
+.s4 {
+    background-color: #f98320;
+    animation-delay: 1.5s;
+}
+
+.s5 {
+    background-color: #da2a79;
+    animation-delay: 2s;
+}
+
+.s6 {
+    background-color: #5943d2;
+    animation-delay: 2.5s;
+}
+
+.s7 {
+    background-color: rgb(214, 255, 102);
+    animation-delay: 3s;
+}
+
+@keyframes slide {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 400px;
+        transform: scale(2);
+        opacity: .5s;
+    }
+}
+
